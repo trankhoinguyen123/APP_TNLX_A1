@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:elevation="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtDanhSachCauHoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="15dp"
+        android:background="@drawable/round_textview"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/PhanTramDanhSach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:gravity="right"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+
+
+        android:textColor="@color/black"/>
+
+</LinearLayout>

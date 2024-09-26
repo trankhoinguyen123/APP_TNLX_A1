@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6E6CF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_gioithieudethi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bộ đề thi gồm 20 câu, Trong đó có:"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="- 9 câu về khái niệm và quy tắc giao thông."
+        android:textColor="#020202" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="- 1 câu về văn hóa và đạo đức người lái xe."
+        android:textColor="#020202" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="- 5 câu về hệ thống biển báo."
+        android:textColor="#020202" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="- 5 câu về giải các sa hình."
+        android:textColor="#020202" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Bạn cần trả lời đúng 18 câu trong vòng 15 phút để vượt qua bài thi."
+        android:textAlignment="center"
+        android:textColor="#020202" />
+
+    <Button
+        android:id="@+id/btn_starttest"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Bắt đầu làm bài" />
+
+</LinearLayout>

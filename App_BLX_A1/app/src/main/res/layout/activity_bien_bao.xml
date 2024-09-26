@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BienBao.View.BienBaoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_Tieude_App"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Biển báo đường bộ"
+            android:background="#40B6EC"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchViewBienBao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:background="@drawable/search_view_bg"
+                app:iconifiedByDefault="false"
+                app:queryHint="Biển 1, Biển 2, ...." />
+
+            <ImageButton
+                android:id="@+id/imgBtnPicture"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/picture"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".1"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="Hiew"/>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnBBTatCa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_option_bien_bao_first"
+                    android:textColor="@color/black"
+                    android:text="Tất cả" />
+
+                <Button
+                    android:id="@+id/btnBBCam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_option_bien_bao_body"
+                    android:paddingHorizontal="16dp"
+                    android:text="Biển báo cấm"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnBBHieuLenh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_option_bien_bao_body"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/black"
+                    android:text="Biển hiệu lệnh" />
+
+                <Button
+                    android:id="@+id/btnBBChiDan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_option_bien_bao_body"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/black"
+                    android:text="Biển chỉ dẫn" />
+
+                <Button
+                    android:id="@+id/btnBBNguyHiem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_option_bien_bao_body"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/black"
+                    android:text="Biển báo nguy hiểm và cảnh báo" />
+
+                <Button
+                    android:id="@+id/btnBBPhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_option_bien_bao_last"
+                    android:textColor="@color/black"
+                    android:text="Biển phụ" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/revDanhSachBienBao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

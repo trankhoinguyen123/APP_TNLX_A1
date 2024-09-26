@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "971256069501",
+    "project_id": "doanandroid-e3111",
+    "storage_bucket": "doanandroid-e3111.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971256069501:android:08f246e556becc9b7e2014",
+        "android_client_info": {
+          "package_name": "com.example.app_blx_a1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUWjFRHC35A9D4heZ_i8e3MNDh7wp5SuM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtCauHoiOnTap"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:background="@color/white"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:translationZ="3dp" />
+
+        <ImageButton
+            android:id="@+id/imgHinhAnhOnTap"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter" />
+
+        <Button
+            android:id="@+id/btn_A1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20pt"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/round_layout_button"
+            android:backgroundTint="@null"
+            android:elevation="3dp"
+            android:stateListAnimator="@null"
+            android:text="a"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:translationZ="3dp" />
+
+        <Button
+            android:id="@+id/btn_B1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:text="b"
+            android:backgroundTint="@null"
+            android:textColor="@color/black"
+            android:background="@drawable/round_layout_button"
+            android:textSize="13sp"
+            android:elevation="3dp"
+            android:translationZ="3dp"
+            android:stateListAnimator="@null" />
+
+        <Button
+            android:id="@+id/btn_C1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="@null"
+            android:text="c"
+            android:background="@drawable/round_layout_button"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:elevation="3dp"
+            android:translationZ="3dp"
+            android:stateListAnimator="@null" />
+
+        <TextView
+            android:id="@+id/txtCauTraLoi"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@color/white"
+            android:elevation="5dp"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:text="Giải thích: \n"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:translationZ="3dp" />
+
+    </LinearLayout>
+</ScrollView>

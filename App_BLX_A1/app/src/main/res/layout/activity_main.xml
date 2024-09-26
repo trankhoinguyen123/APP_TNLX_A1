@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#40B6EC"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:weightSum="2">
+        <LinearLayout
+            android:id="@+id/layout_OnTap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_marginEnd="10dp"
+            android:onClick="onClick"
+            android:background="@drawable/round_back_ground_1">
+
+            <ImageView
+                android:layout_width="105dp"
+                android:layout_height="90dp"
+                android:src="@drawable/ontap" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Ôn tập câu hỏi"
+                android:textColor="@color/white"
+                android:textSize="7pt"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_ThiThu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:onClick="onClick"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/round_back_ground_2">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/thithu"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Thi theo bồ đề"
+                android:textColor="@color/white"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:weightSum="2">
+        <LinearLayout
+            android:id="@+id/layout_TraCuuLuat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:onClick="onClick"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/round_back_ground_3">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/luatgiaothong" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Luật giao thông"
+                android:textColor="@color/white"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_TraCuuBienBao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/round_back_ground_4">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/bienbao"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Biển báo"
+                android:textColor="@color/white"
+                android:textSize="7pt"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:weightSum="2">
+        <LinearLayout
+            android:id="@+id/layout_MeoGhiNho"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:onClick="onClick"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/round_back_ground_7">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/meoghinho" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Mẹo thi"
+                android:textColor="@color/white"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_DiemLiet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:onClick="onClick"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/round_back_ground_5">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/diemliet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="20 câu điểm liệt"
+                android:textColor="@color/white"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:weightSum="2">
+<!--        <LinearLayout-->
+<!--            android:id="@+id/layout_SearchRule2"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="4"-->
+<!--            android:background="#00BCD4"-->
+<!--            android:onClick="onClick"-->
+<!--            android:orientation="vertical">-->
+
+
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/layout_LichSuThi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:onClick="onClick"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/round_back_ground_8">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/history" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Lịch sử thi"
+                android:textColor="@color/white"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

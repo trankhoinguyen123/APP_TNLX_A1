@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when the view is selected -->
+    <item android:state_selected="true">
+        <inset android:insetRight="1dp">
+            <shape>
+
+                <solid android:color="@color/delft_blue"/> <!-- Change to your selected color -->
+            </shape>
+        </inset>
+    </item>
+    <!-- Default state -->
+    <item>
+        <inset android:insetRight="1dp">
+            <shape>
+
+                <solid android:color="@color/cadet_gray"/> <!-- Change to your default color -->
+            </shape>
+        </inset>
+    </item>
+</selector>
